@@ -19,11 +19,12 @@ figure.set(ylim=[0,250],
 	xlabel = 'Menu Item',
 	title = 'Number of Orders for each Menu Item at the Baseball Game')
 
-plt.show()
+
 
 import numpy as np
 import pandas as pd
-from plotnine import *
+from plotline import *
 scores = pd.read_csv('C://Users//caitl//Documents//scores.csv')
 ggplot(scores, aes(x='Hours_Studied',y='Score_On_Exam'))+geom_point()
-fig = g.draw()
+
+plt.show()
