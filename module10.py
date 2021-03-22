@@ -24,7 +24,8 @@ figure.set(ylim=[0,250],
 import numpy as np
 import pandas as pd
 from plotline import *
+from ggplot import *
 scores = pd.read_csv('C://Users//caitl//Documents//scores.csv')
-ggplot(scores, aes(x='Hours_Studied',y='Score_On_Exam'))+geom_point()
+ggplot(aes(x='Hours_Studied',y='Score_On_Exam'), data=scores)+geom_point()
 
 plt.show()
